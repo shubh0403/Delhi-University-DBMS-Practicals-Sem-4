@@ -255,26 +255,3 @@ select ename from employee where eno not in (select distinct supervisionEno from
 
 (select job_type from employee group by job_type order by count(*) limit 1) union (select job_type from employee group by job_type order by count(*) desc limit 1);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
